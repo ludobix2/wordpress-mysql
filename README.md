@@ -18,8 +18,13 @@ Este repositorio contiene los archivos YAML necesarios para desplegar una aplica
 ## 🚀 Pasos para desplegar
 
 > Requisitos:
+> 2 Maquinas virtuales o instancias EC2 con Ubuntu Server 22.04 LTS
+> Master: minimo 2 vCPU y 4GB de Ram 
+> Worker: minimo 4 vCPU y 8GB de Ram
 > - Clúster Kubernetes operativo (local o en la nube)
 > - `kubectl` configurado
+> - `kubeadm` configurado
+> - `kubelet` configurado
 > - Acceso de administrador para crear namespaces y volúmenes
 ---
 ### 1. Clonar el repositorio
