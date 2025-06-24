@@ -54,11 +54,7 @@ kubectl get svc -n wordpress
 
 ## 🌐 Acceder a la aplicación WordPress
 
-1. Obtén la IP del nodo donde corre el clúster:
-
-kubectl get nodes -o wide
-
-2. Usa la IP del nodo + el puerto `30080` para acceder desde tu navegador:
+Usa la IP del nodo + el puerto `30080` para acceder desde tu navegador:
 
 http://<NODE-IP>:30080
 
@@ -72,7 +68,7 @@ http://<NODE-IP>:30080
 ## 📌 Autor
 
 **Luis Nahuelan**  
-Estudiante de Ingeniería en Informática - Duoc UC  
+Estudiante de Ingeniería en Infraestructura y Plataformas Tecnologicas - Duoc UC  
 Contacto: lu.nahuelan@duocuc.cl
 
 ## ✅ Estado del despliegue
