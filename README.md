@@ -23,11 +23,9 @@ Este repositorio contiene los archivos YAML necesarios para desplegar una aplica
 > - Acceso de administrador para crear namespaces y volúmenes
 
 ### 1. Clonar el repositorio
-```json
-{
+```
 git clone https://github.com/ludobix2/wordpress-mysql.git
 cd wordpress-mysql
-}
 ```
 ### 2. Crear los namespaces
 
