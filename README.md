@@ -6,7 +6,7 @@ Este repositorio contiene los archivos YAML necesarios para desplegar una aplica
 ## 📁 Estructura del repositorio
 ```
 .
-├── manual-pv.yaml                # PersistentVolumes para MySQL y WordPress
+├── manual-pv.yaml               # PersistentVolumes para MySQL y WordPress
 ├── mysql-deployment.yaml        # Service y Deployment de MySQL
 ├── mysql-pvc.yaml               # PersistentVolumeClaim de MySQL
 ├── wordpress-deployment.yaml    # Service (NodePort) y Deployment de WordPress
