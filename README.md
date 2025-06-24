@@ -1,9 +1,9 @@
 # 📦 Despliegue de WordPress + MySQL en Kubernetes con Namespaces
 
 Este repositorio contiene los archivos YAML necesarios para desplegar una aplicación WordPress con base de datos MySQL en un clúster de Kubernetes, organizados en namespaces separados (`wordpress` y `mysql`), usando volúmenes persistentes locales (`hostPath`) para almacenamiento de datos.
-
+---
 ## 📁 Estructura del repositorio
-
+```
 .
 ├── manual-pv.yaml                # PersistentVolumes para MySQL y WordPress
 ├── mysql-deployment.yaml        # Service y Deployment de MySQL
@@ -11,7 +11,8 @@ Este repositorio contiene los archivos YAML necesarios para desplegar una aplica
 ├── wordpress-deployment.yaml    # Service (NodePort) y Deployment de WordPress
 ├── wordpress-pvc.yaml           # PersistentVolumeClaim de WordPress
 ├── namespaces.yaml              # Namespaces "mysql" y "wordpress"
-
+```
+---
 ## 🚀 Pasos para desplegar
 
 > Requisitos:
