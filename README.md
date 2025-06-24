@@ -28,39 +28,44 @@ git clone https://github.com/ludobix2/wordpress-mysql.git
 cd wordpress-mysql
 ```
 ### 2. Crear los namespaces
-
+```
 kubectl apply -f namespaces.yaml
-
+```
 ### 3. Crear los volúmenes persistentes (hostPath)
-
+```
 kubectl apply -f manual-pv.yaml
-
+```
 ### 4. Desplegar la base de datos MySQL
-
+```
 kubectl apply -f mysql-pvc.yaml
 kubectl apply -f mysql-deployment.yaml
-
+```
 Verifica que esté funcionando:
 
+```
 kubectl get pods -n mysql
 kubectl get svc -n mysql
-
+```
 ### 5. Desplegar WordPress
 
+```
 kubectl apply -f wordpress-pvc.yaml
 kubectl apply -f wordpress-deployment.yaml
+```
 
 Verifica que esté funcionando:
-
+```
 kubectl get pods -n wordpress
 kubectl get svc -n wordpress
+```
 
 ## 🌐 Acceder a la aplicación WordPress
 
 Usa la IP del nodo + el puerto `30080` para acceder desde tu navegador:
 
+```
 http://<NODE-IP>:30080
-
+```
 ## 🧠 Detalles técnicos
 
 - **MySQL y WordPress están separados por namespaces** para mejorar organización y gestión.
